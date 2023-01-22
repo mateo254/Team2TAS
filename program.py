@@ -6,7 +6,6 @@ if wiek.isdigit() == False:
     exit("Wiek musi być liczbą całkowitą.")
 
 wiek = int(wiek)
-
 region = str(region)
 plec = str(plec)
 
