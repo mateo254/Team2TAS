@@ -1,11 +1,24 @@
+
 region = input("Podaj swój region USA/EUR: ")
-plec = input("Podaj swoją płeć K/M: ")
+plec = input("Prosze podaj swoja plec: K-kobieta albo M-mężczyzna ")
+while plec.upper() != "K" and plec.upper() != "M":
+    plec = input("Niepoprawna wartość. Prosze wprowadź M lub K: ")
 wiek = input("Podaj wiek użytkownika: ")
+
 
 if wiek.isdigit() == False:
     exit("Wiek musi być liczbą albo nie jest liczbą całkowitą ")
 #Zamiana wieku na typ int
 wiek = int(wiek)
+
+if wiek >= 18 and wiek<=40:
+    print("Witaj w naszej apce z alkoholem, zapraszamy na zakupy.")
+elif wiek > 40:
+    print("Witaj w naszej apce z alkoholem, zapraszamy na zakupy.")
+    print("Uważaj w Twoim wieku na alkohol.")
+else:
+    print("Jesteś za młody/a na alkohol.")
+
 region = str(region)
 plec = str(plec)
 
@@ -36,3 +49,4 @@ if region == "EUR":
         print("Witaj w naszej apce z alkoholem, zapraszamy do zakupów")
     else:
         exit("Jesteś za młoda/y na alkohol. Zapraszamy na disney.com")
+
