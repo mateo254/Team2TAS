@@ -3,11 +3,15 @@ plec = input("Podaj swoją płeć K/M: ")
 wiek = input("Podaj wiek użytkownika: ")
 
 if wiek.isdigit() == False:
-    exit("Wiek musi być liczbą całkowitą.")
-
+    exit("Wiek musi być liczbą albo nie jest liczbą całkowitą ")
+#Zamiana wieku na typ int
 wiek = int(wiek)
 region = str(region)
 plec = str(plec)
+
+#Obsługa bugu z zerowym wiekiem
+if wiek == 0:
+    wiek = wiek + 1
 
 if region == "USA":
     print("Twój region to USA")
