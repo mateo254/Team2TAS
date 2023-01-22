@@ -31,6 +31,7 @@ if region == "EUR":
         print("Witaj w naszej apce z alkoholem, zapraszamy do zakupów")
     else:
         exit("Jesteś za młoda/y na alkohol. Zapraszamy na disney.com")
+        
 
 
 
