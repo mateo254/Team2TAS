@@ -1,4 +1,11 @@
 wiek = input("Podaj wiek użytkownika jako liczbę całkowitą: ")
+
+
+plec = input("Prosze podaj swoja plec: K-kobieta albo M-mężczyzna ")
+while plec.upper() != "K" and plec.upper() != "M":
+    plec = input("Niepoprawna wartość. Prosze wprowadź M lub K: ")
+
+
 if wiek.isdigit() == False:
     exit("Wiek musi być liczbą albo nie jest liczbą całkowitą ")
 wiek = int(wiek)
